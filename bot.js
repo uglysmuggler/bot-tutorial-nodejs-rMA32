@@ -5,24 +5,73 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
-      botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
-      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
-      botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i; botRegexSC = /^\/SDL/i; botRegexP = /^\/PDL/i;
+      botRegexP = /^\/PDL/i; botregexRS = /^\/ROSTER/i; botRegexTw = /^\/TWITCH/i; botRegexMX = /^\/Mixer/i;
+  
+  
+      botRegexSalt = /^\/salt/;
+      botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/;  botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
+      botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; 
+      botRegexCC = /^\/cc/;
+      botRegexOW = /^\/ratings/; 
       botRegexSlut = /^\/slut/;
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
       botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/;
       botRegexDaf = /^\/dafuq/; botRegexMA32 = /^\/pending/; botRegexTrade = /^\/trade/; 
-      siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
-      siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
+
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
+   
+  
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
     postMessage(cool());
     this.res.end();
   }
+  else if(request.text && botRegexDL.test(request.text)) {
+    this.res.writeHead(200);
+    //postMessage("http://www.daddyleagues.com/maddenrating?name=&position=all&team="+request.text.substring(5,8));
+    postMessage("http://daddyleagues.com/knl18/team/"+request.text.substring(5,8)+"/depthchart");
+    this.res.end();
+  } 
+  else if(request.text && botRegexSC.test(request.text)) {
+    this.res.writeHead(200);
+    //postMessage("http://www.daddyleagues.com/maddenrating?name=&position=all&team="+request.text.substring(5,8));
+    postMessage("http://daddyleagues.com/knl18/team/"+request.text.substring(5,8)+"/schedule");
+    this.res.end();
+  }
+    else if(request.text && botRegexP.test(request.text)) {
+    this.res.writeHead(200);
+    var req = request.text.substring(5,request.text.length);
+    var rep = req.replace(/ /,"+");
+    postMessage("http://daddyleagues.com/knl18/players?name="+rep+"&position=all&team=all");
+    
+    this.res.end();
+  } 
+    else if(request.text && botRegexRS.test(request.text)) {
+    this.res.writeHead(200);
+    //postMessage("http://www.daddyleagues.com/maddenrating?name=&position=all&team="+request.text.substring(5,8));
+    postMessage("http://daddyleagues.com/knl18/team/"+request.text.substring(5,8)+"/roster");
+    this.res.end();
+  }
+    else if(request.text && botRegexTw.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://www.twitch.tv/"+request.text.substring(8,request.text.length));
+    this.res.end();
+  } 
+    else if(request.text && botRegexMX.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://www.mixer.com/"+request.text.substring(8,request.text.length));
+    this.res.end();
+  } 
+  
+  
+  
+  
+  
+  
+
   else if(request.text && botRegexSlut.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/640x364.jpeg.f8a0e216bf7e42ed9a86b3ae23cc2ff1.large");
@@ -67,14 +116,7 @@ function respond() {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/305x375.jpeg.a8dd3aa18c7a4963a553e6dc16bcb100.large");
     this.res.end();
-  } 
-  else if(request.text && botRegexDL.test(request.text)) {
-    this.res.writeHead(200);
-    //postMessage("http://www.daddyleagues.com/maddenrating?name=&position=all&team="+request.text.substring(5,8));
-    postMessage("http://daddyleagues.com/nml18/team/"+request.text.substring(5,8)+"/depthchart");
-    this.res.end();
-  } 
-  
+  }  
   else if(request.text && botRegexOW.test(request.text)) {
     this.res.writeHead(200);
     postMessage("www.daddyleagues.com/maddenrating/");
@@ -99,27 +141,7 @@ function respond() {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/220x147.jpeg.a2dd2add32b14fff9e329535186d793c.large");
     this.res.end();
-  } 
-  else if(request.text && botRegexSC.test(request.text)) {
-    this.res.writeHead(200);
-    
-    postMessage("http://daddyleagues.com/nml18/team/"+request.text.substring(5,8)+"/schedule");
-    this.res.end();
   }
-  else if(request.text && botRegexP.test(request.text)) {
-    this.res.writeHead(200);
-    var req = request.text.substring(5,request.text.length);
-    var rep = req.replace(/ /,"+");
-    postMessage("http://daddyleagues.com/nml18/players?name="+rep+"&position=all&team=all");
-    
-    this.res.end();
-  }  
-
-  else if(request.text && botRegexTw.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://www.twitch.tv/"+request.text.substring(8,request.text.length));
-    this.res.end();
-  } 
   else if(request.text && botRegexSb.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://www.reddit.com/r/TheNiceMaddenLeague/");
