@@ -67,7 +67,7 @@ function respond() {
   } 
   else if(request.text && botRegexPL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/knl18/stats/player");
+    postMessage("http://daddyleagues.com/knl18/stats/player")
     this.res.end();
   } 
   else if(request.text && botRegexST.test(request.text)) {
@@ -95,7 +95,7 @@ function respond() {
     console.log("don't care");
     this.res.writeHead(200);
     this.res.end();
-  }
+
 }
 
 function postMessage(response) {
