@@ -12,7 +12,7 @@ function respond() {
 
   var request = JSON.parse(this.req.chunks[0]),
 
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i; botRegexRules = /^\/rules/; botRegexSC = /^\/SDL/i;
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;  botRegexSC = /^\/SDL/i;
 
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexOW = /^\/ratings/; botRegexST = /^\/standings/;
 
@@ -52,7 +52,7 @@ function respond() {
 
     //postMessage("http://www.daddyleagues.com/maddenrating?name=&position=all&team="+request.text.substring(5,8));
 
-    postMessage("http://daddyleagues.com/mcflghof/team/"+request.text.substring(5,8)+"/depthchart");
+    postMessage("http://daddyleagues.com/knl18/team/"+request.text.substring(5,8)+"/depthchart");
 
     this.res.end();
 
@@ -71,7 +71,7 @@ function respond() {
 
     this.res.writeHead(200);
 
-    postMessage("http://daddyleagues.com/mcflghof/blog")
+    postMessage("http://daddyleagues.com/knl18/blog")
 
     this.res.end();
 
@@ -93,7 +93,7 @@ function respond() {
 
     this.res.writeHead(200);
 
-    postMessage("http://daddyleagues.com/mcflghof/standings")
+    postMessage("http://daddyleagues.com/knl18/standings")
 
     this.res.end();
 
@@ -103,7 +103,7 @@ function respond() {
 
     this.res.writeHead(200);
 
-    postMessage("http://daddyleagues.com/mcflghof/standing/ranking");
+    postMessage("http://daddyleagues.com/knl18/standing/ranking");
 
     this.res.end();
 
@@ -113,7 +113,7 @@ function respond() {
 
     this.res.writeHead(200);
 
-    postMessage("http://daddyleagues.com/mcflghof/stats/rookie");
+    postMessage("http://daddyleagues.com/knl18/stats/rookie");
 
     this.res.end();
 
@@ -123,7 +123,7 @@ function respond() {
 
     this.res.writeHead(200);
 
-    postMessage("http://daddyleagues.com/mcflghof/stats/team");
+    postMessage("http://daddyleagues.com/knl18/stats/team");
 
     this.res.end();
 
@@ -133,17 +133,7 @@ function respond() {
 
     this.res.writeHead(200);
 
-    postMessage("http://daddyleagues.com/mcflghof/stats/player");
-
-    this.res.end();
-
-  } 
-
-    else if(request.text && botRegexRules.test(request.text)) {
-
-    this.res.writeHead(200);
-
-    postMessage("https://www.daddyleagues.com/mcflghof/rules");
+    postMessage("http://daddyleagues.com/knl18/stats/player");
 
     this.res.end();
 
@@ -165,7 +155,7 @@ function respond() {
 
     
 
-    postMessage("http://daddyleagues.com/mcflghof/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://daddyleagues.com/knl18/team/"+request.text.substring(5,8)+"/schedule");
 
     this.res.end();
 
@@ -179,7 +169,7 @@ function respond() {
 
     var rep = req.replace(/ /,"+");
 
-    postMessage("http://daddyleagues.com/mcflghof/players?name="+rep+"&position=all&team=all");
+    postMessage("http://daddyleagues.com/knl18/players?name="+rep+"&position=all&team=all");
 
     
 
