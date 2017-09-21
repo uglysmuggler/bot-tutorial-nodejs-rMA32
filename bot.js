@@ -1,4 +1,4 @@
-var HTTPS = require('https');
+ var HTTPS = require('https');
 
 var cool = require('cool-ascii-faces');
 
@@ -18,7 +18,7 @@ function respond() {
 
       botRegexMX = /^\/mixer/i; botRegexPR = /^\/rankings/; botRegexRK = /^\/rookies/; botRegexTL = /^\/teamlead/;
 
-      botRegexPL = /^\/playerlead/; botRegexBT = /^\/bot/; botRegexLG = /^\/login/; botRegexBL = /^\/blog/;
+      botRegexPL = /^\/playerlead/; botRegexBT = /^\/bot/; botRegexLG = /^\/login/; botRegexBL = /^\/blog/; botRegexSD = /^\/scedule/;
 
       
 
@@ -58,6 +58,16 @@ function respond() {
 
   }
 
+  else if(request.text && botRegexSD.test(request.text)) {
+
+    this.res.writeHead(200);
+
+    postMessage("https://daddyleagues.com/knl18/schedules")
+
+    this.res.end();
+
+  }
+ 
   else if(request.text && botRegexBT.test(request.text)) {
 
     this.res.writeHead(200);
