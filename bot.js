@@ -14,11 +14,11 @@ function respond() {
 
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;  botRegexSC = /^\/SDL/i;
 
-      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexOW = /^\/ratings/; botRegexST = /^\/standings/;
+      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexST = /^\/standings/;
 
       botRegexMX = /^\/mixer/i; botRegexPR = /^\/rankings/; botRegexRK = /^\/rookies/; botRegexTL = /^\/teamlead/;
 
-      botRegexPL = /^\/playerlead/; botRegexBT = /^\/bot/; botRegexLG = /^\/login/; botRegexBL = /^\/blog/; botRegexSD = /^\/scedule/;
+      botRegexPL = /^\/playerlead/; botRegexBT = /^\/bot/; botRegexLG = /^\/league/; botRegexBL = /^\/blog/; botRegexSD = /^\/scedule/;
 
       
 
@@ -88,17 +88,6 @@ function respond() {
   }
 
 
-
-  else if(request.text && botRegexOW.test(request.text)) {
-
-    this.res.writeHead(200);
-
-    postMessage("www.daddyleagues.com/maddenrating/")
-
-    this.res.end();
-
-  } 
-
   else if(request.text && botRegexST.test(request.text)) {
 
     this.res.writeHead(200);
@@ -152,7 +141,7 @@ function respond() {
 
     this.res.writeHead(200);
 
-    postMessage("https://www.daddyleagues.com/login");
+    postMessage("https://www.daddyleagues.com/knl18");
 
     this.res.end();
 
