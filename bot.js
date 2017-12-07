@@ -18,7 +18,7 @@ function respond() {
 
       botRegexMX = /^\/mixer/i; botRegexPR = /^\/rankings/; botRegexRK = /^\/rookies/; botRegexTL = /^\/teamlead/;
 
-      botRegexPL = /^\/playerlead/; botRegexBT = /^\/bot/; botRegexLG = /^\/league/; botRegexBL = /^\/blog/; botRegexSD = /^\/scedule/;
+      botRegexPL = /^\/playerlead/; botRegexBT = /^\/bot/; botRegexLG = /^\/daddy/; botRegexBL = /^\/blog/; botRegexSD = /^\/scedule/;
 
       
 
