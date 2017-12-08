@@ -52,7 +52,7 @@ function respond() {
 
     //postMessage("http://www.daddyleagues.com/maddenrating?name=&position=all&team="+request.text.substring(5,8));
 
-    postMessage("http://daddyleagues.com/knl18/team/"+request.text.substring(5,8)+"/depthchart");
+    postMessage("http://daddyleagues.com/sng/team/"+request.text.substring(5,8)+"/depthchart");
 
     this.res.end();
 
@@ -62,7 +62,7 @@ function respond() {
 
     this.res.writeHead(200);
 
-    postMessage("https://daddyleagues.com/knl18/schedules")
+    postMessage("https://daddyleagues.com/sng/schedules")
 
     this.res.end();
 
@@ -81,7 +81,7 @@ function respond() {
 
     this.res.writeHead(200);
 
-    postMessage("http://daddyleagues.com/knl18/blog")
+    postMessage("http://daddyleagues.com/sng/blog")
 
     this.res.end();
 
@@ -92,7 +92,7 @@ function respond() {
 
     this.res.writeHead(200);
 
-    postMessage("http://daddyleagues.com/knl18/standings")
+    postMessage("http://daddyleagues.com/sng/standings")
 
     this.res.end();
 
@@ -102,7 +102,7 @@ function respond() {
 
     this.res.writeHead(200);
 
-    postMessage("http://daddyleagues.com/knl18/standing/ranking");
+    postMessage("http://daddyleagues.com/sng/standing/ranking");
 
     this.res.end();
 
@@ -112,7 +112,7 @@ function respond() {
 
     this.res.writeHead(200);
 
-    postMessage("http://daddyleagues.com/knl18/stats/rookie");
+    postMessage("http://daddyleagues.com/sng/stats/rookie");
 
     this.res.end();
 
@@ -122,7 +122,7 @@ function respond() {
 
     this.res.writeHead(200);
 
-    postMessage("http://daddyleagues.com/knl18/stats/team");
+    postMessage("http://daddyleagues.com/sng/stats/team");
 
     this.res.end();
 
@@ -132,7 +132,7 @@ function respond() {
 
     this.res.writeHead(200);
 
-    postMessage("http://daddyleagues.com/knl18/stats/player");
+    postMessage("http://daddyleagues.com/sng/stats/player");
 
     this.res.end();
 
@@ -141,7 +141,7 @@ function respond() {
 
     this.res.writeHead(200);
 
-    postMessage("https://www.daddyleagues.com/knl18");
+    postMessage("https://www.daddyleagues.com/sng");
 
     this.res.end();
 
@@ -154,7 +154,7 @@ function respond() {
 
     
 
-    postMessage("http://daddyleagues.com/knl18/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://daddyleagues.com/sng/team/"+request.text.substring(5,8)+"/schedule");
 
     this.res.end();
 
@@ -168,7 +168,7 @@ function respond() {
 
     var rep = req.replace(/ /,"+");
 
-    postMessage("http://daddyleagues.com/knl18/players?name="+rep+"&position=all&team=all");
+    postMessage("http://daddyleagues.com/sng/players?name="+rep+"&position=all&team=all");
 
     
 
