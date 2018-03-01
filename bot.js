@@ -69,7 +69,6 @@ function respond() {
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
 
 
-
                 "MIA","BUF","SF","WAS","NYJ","TB"]
 
                 
@@ -106,7 +105,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/sgn/team/"+request.text.substring(5,8)+"/depthchart");
+    postMessage("http://daddyleagues.com/dob/team/"+request.text.substring(5,8)+"/depthchart");
 
 
 
@@ -126,7 +125,7 @@ function respond() {
 
 
 
-    postMessage("https://daddyleagues.com/sgn/schedules")
+    postMessage("https://daddyleagues.com/dob/schedules")
 
 
 
@@ -164,7 +163,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/sgn/blog")
+    postMessage("http://daddyleagues.com/dob/blog")
 
 
 
@@ -186,7 +185,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/sgn/standings")
+    postMessage("http://daddyleagues.com/dob/standings")
 
 
 
@@ -206,7 +205,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/sgn/standing/ranking");
+    postMessage("http://daddyleagues.com/dob/standing/ranking");
 
 
 
@@ -226,7 +225,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/sgn/stats/rookie");
+    postMessage("http://daddyleagues.com/dob/stats/rookie");
 
 
 
@@ -246,7 +245,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/sgn/stats/team");
+    postMessage("http://daddyleagues.com/dob/stats/team");
 
 
 
@@ -266,7 +265,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/sgn/stats/player");
+    postMessage("http://daddyleagues.com/dob/stats/player");
 
 
 
@@ -284,7 +283,7 @@ function respond() {
 
 
 
-    postMessage("https://www.daddyleagues.com/sgn");
+    postMessage("https://www.daddyleagues.com/dob");
 
 
 
@@ -310,7 +309,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/sgn/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://daddyleagues.com/dob/team/"+request.text.substring(5,8)+"/schedule");
 
 
 
@@ -338,7 +337,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/sgn/players?name="+rep+"&position=all&team=all");
+    postMessage("http://daddyleagues.com/dob/players?name="+rep+"&position=all&team=all");
 
 
 
