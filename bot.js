@@ -42,8 +42,7 @@ function respond() {
 
 
 
-      
-
+     
 
 
       
@@ -105,7 +104,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/dob/team/"+request.text.substring(5,8)+"/depthchart");
+    postMessage("http://daddyleagues.com/otss/team/"+request.text.substring(5,8)+"/depthchart");
 
 
 
@@ -125,7 +124,7 @@ function respond() {
 
 
 
-    postMessage("https://daddyleagues.com/dob/schedules")
+    postMessage("https://daddyleagues.com/otss/schedules")
 
 
 
@@ -163,7 +162,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/dob/blog")
+    postMessage("http://daddyleagues.com/otss/blog")
 
 
 
@@ -185,7 +184,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/dob/standings")
+    postMessage("http://daddyleagues.com/otss/standings")
 
 
 
@@ -205,7 +204,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/dob/standing/ranking");
+    postMessage("http://daddyleagues.com/otss/standing/ranking");
 
 
 
@@ -225,7 +224,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/dob/stats/rookie");
+    postMessage("http://daddyleagues.com/otss/stats/rookie");
 
 
 
@@ -245,7 +244,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/dob/stats/team");
+    postMessage("http://daddyleagues.com/otss/stats/team");
 
 
 
@@ -265,7 +264,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/dob/stats/player");
+    postMessage("http://daddyleagues.com/otss/stats/player");
 
 
 
@@ -283,7 +282,7 @@ function respond() {
 
 
 
-    postMessage("https://www.daddyleagues.com/dob");
+    postMessage("https://www.daddyleagues.com/otss");
 
 
 
@@ -309,7 +308,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/dob/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://daddyleagues.com/otss/team/"+request.text.substring(5,8)+"/schedule");
 
 
 
@@ -337,7 +336,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/dob/players?name="+rep+"&position=all&team=all");
+    postMessage("http://daddyleagues.com/otss/players?name="+rep+"&position=all&team=all");
 
 
 
