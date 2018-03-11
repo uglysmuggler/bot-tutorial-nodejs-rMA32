@@ -38,7 +38,7 @@ function respond() {
 
 
 
-      botRegexPL = /^\/playerlead/; botRegexBT = /^\/bot/; botRegexLG = /^\/daddy/; botRegexBL = /^\/blog/; botRegexSD = /^\/scedule/;
+      botRegexPL = /^\/playerlead/; botRegexBT = /^\/bot/; botRegexLG = /^\/daddy/; botRegexBL = /^\/blog/; botRegexSD = /^\/schedule/;
 
 
 
