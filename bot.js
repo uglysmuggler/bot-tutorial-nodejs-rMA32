@@ -360,7 +360,7 @@ function respond() {
 
 
 
-    postMessage("http://www.mixer.com/"+request.text.substring(8,request.text.length));
+   postMessage("http://www.mixer.com/"+request.text.substring);
 
 
 
