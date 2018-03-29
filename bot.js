@@ -104,7 +104,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/hardknockm18/team/"+request.text.substring(5,8)+"/depthchart");
+    postMessage("http://daddyleagues.com/otss/team/"+request.text.substring(5,8)+"/depthchart");
 
 
 
@@ -124,7 +124,7 @@ function respond() {
 
 
 
-    postMessage("https://daddyleagues.com/hardknockm18/schedules")
+    postMessage("https://daddyleagues.com/otss/schedules")
 
 
 
@@ -162,7 +162,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/hardknockm18/blog")
+    postMessage("http://daddyleagues.com/otss/blog")
 
 
 
@@ -184,7 +184,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/hardknockm18/standings")
+    postMessage("http://daddyleagues.com/otss/standings")
 
 
 
@@ -204,7 +204,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/hardknockm18/standing/ranking");
+    postMessage("http://daddyleagues.com/otss/standing/ranking");
 
 
 
@@ -224,7 +224,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/hardknockm18/stats/rookie");
+    postMessage("http://daddyleagues.com/otss/stats/rookie");
 
 
 
@@ -244,7 +244,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/hardknockm18/stats/team");
+    postMessage("http://daddyleagues.com/otss/stats/team");
 
 
 
@@ -264,7 +264,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/hardknockm18/stats/player");
+    postMessage("http://daddyleagues.com/otss/stats/player");
 
 
 
@@ -282,7 +282,7 @@ function respond() {
 
 
 
-    postMessage("https://www.daddyleagues.com/hardknockm18");
+    postMessage("https://www.daddyleagues.com/otss");
 
 
 
@@ -308,7 +308,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/hardknockm18/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://daddyleagues.com/otss/team/"+request.text.substring(5,8)+"/schedule");
 
 
 
@@ -336,7 +336,7 @@ function respond() {
 
 
 
-    postMessage("http://daddyleagues.com/hardknockm18/players?name="+rep+"&position=all&team=all");
+    postMessage("http://daddyleagues.com/otss/players?name="+rep+"&position=all&team=all");
 
 
 
